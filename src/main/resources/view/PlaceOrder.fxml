@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.controls.JFXTreeTableView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TreeTableColumn?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="791.0" maxWidth="1400.0" minHeight="750.0" minWidth="1400.0" prefHeight="791.0" prefWidth="1400.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.controller.PlaceOrderController">
+   <children>
+      <ImageView fitHeight="890.0" fitWidth="1284.0" layoutX="-89.0" layoutY="-54.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/hannah-morgan-ycVFts5Ma4s-unsplash.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="811.0" fitWidth="1215.0" layoutX="436.0" layoutY="-6.0" pickOnBounds="true" preserveRatio="true" AnchorPane.topAnchor="-6.0">
+         <image>
+            <Image url="@../images/hannah-morgan-ycVFts5Ma4s-unsplash.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane cache="true" layoutX="85.0" layoutY="20.0" opacity="0.48" prefHeight="705.0" prefWidth="1322.0" style="-fx-background-radius: 50px; -fx-background-color: white;" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="85.0" AnchorPane.rightAnchor="75.0" AnchorPane.topAnchor="20.0">
+         <opaqueInsets>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </opaqueInsets>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+         <children>
+            <Label layoutX="553.0" layoutY="11.0" text="Place Order">
+               <font>
+                  <Font name="System Bold" size="23.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <JFXTextField fx:id="lblEmpName" focusColor="WHITE" layoutX="410.0" layoutY="140.0" promptText="Emp Name" unFocusColor="BLACK" />
+      <Label layoutX="539.0" layoutY="732.0" text="Total Price :">
+         <font>
+            <Font name="Copperplate Gothic Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="328.0" layoutY="732.0" text="Total Discount :">
+         <font>
+            <Font name="Copperplate Gothic Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="100.0" layoutY="731.0" text="Total Qty Price :">
+         <font>
+            <Font name="Copperplate Gothic Bold" size="15.0" />
+         </font>
+      </Label>
+      <JFXTreeTableView layoutX="125.0" layoutY="397.0" prefHeight="292.0" prefWidth="1159.0" style="-fx-background-radius: 5px;">
+         <columns>
+            <TreeTableColumn prefWidth="121.99993896484375" text="Item Code" />
+            <TreeTableColumn prefWidth="262.0" text="Description" />
+            <TreeTableColumn prefWidth="93.0" text="Type" />
+            <TreeTableColumn prefWidth="82.0" text="Size" />
+            <TreeTableColumn prefWidth="89.0" text="Qty" />
+            <TreeTableColumn prefWidth="126.0" text="Unit Price" />
+            <TreeTableColumn prefWidth="123.0" text="Qty Price" />
+            <TreeTableColumn prefWidth="126.0" text="Discount %" />
+            <TreeTableColumn prefWidth="134.0" text="Price" />
+         </columns>
+      </JFXTreeTableView>
+      <JFXButton fx:id="btnAddToCart" layoutX="1162.0" layoutY="330.0" onAction="#btnAddToCartOnAction" prefHeight="31.0" prefWidth="124.0" style="-fx-background-color: yellow;" text="🛒  Add to Cart" />
+      <JFXCheckBox layoutX="310.0" layoutY="353.0" text="Cash" />
+      <JFXComboBox fx:id="lblOrderId" layoutX="210.0" layoutY="100.0" prefHeight="31.0" prefWidth="176.0" />
+      <JFXCheckBox layoutX="240.0" layoutY="352.0" text="Card" />
+      <JFXButton fx:id="btnBack" layoutX="120.0" layoutY="40.0" onAction="#btnBackOnAction" prefHeight="31.0" prefWidth="89.0" style="-fx-background-color: rgba(110, 85, 115, 0.75);" text="←Back" />
+      <Label layoutX="110.0" layoutY="110.0" text="Order ID :">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="110.0" layoutY="150.0" text="Employer :">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="110.0" layoutY="190.0" text="Customer Name :">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="110.0" layoutY="230.0" text="Customer Contact :">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="110.0" layoutY="270.0" text="Customer Email :">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="110.0" layoutY="310.0" text="Date :">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="110.0" layoutY="350.0" text="Payment :">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="765.0" layoutY="107.0" text="Item code :">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="766.0" layoutY="144.0" text="Description :">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="767.0" layoutY="226.0" text="Selling Price :">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="768.0" layoutY="186.0" text="Qty :">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="765.0" layoutY="267.0" text="Type :">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="1000.0" layoutY="184.0" text="Qty On Hand :">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="1001.0" layoutY="224.0" text="Discount :">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="1002.0" layoutY="264.0" text="Size :">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="18.0" />
+         </font>
+      </Label>
+      <JFXComboBox fx:id="lblEmpId" layoutX="210.0" layoutY="140.0" prefHeight="31.0" prefWidth="176.0" />
+      <JFXTextField fx:id="txtCustName" focusColor="WHITE" layoutX="279.0" layoutY="186.0" promptText="Enter Cust. Name" unFocusColor="BLACK" />
+      <JFXTextField fx:id="txtCustContact" focusColor="WHITE" layoutX="278.0" layoutY="221.0" promptText="Enter Cust. Contact" unFocusColor="BLACK" />
+      <JFXTextField fx:id="txtCustEmail" focusColor="WHITE" layoutX="279.0" layoutY="262.0" promptText="Enetr Cust. Email" unFocusColor="BLACK" />
+      <JFXTextField fx:id="txtDescription" focusColor="WHITE" layoutX="880.0" layoutY="137.0" unFocusColor="BLACK" />
+      <JFXComboBox fx:id="lblItemCode" layoutX="891.0" layoutY="100.0" prefHeight="31.0" prefWidth="176.0" />
+      <JFXTextField fx:id="txtQty" focusColor="WHITE" layoutX="821.0" layoutY="178.0" prefHeight="31.0" prefWidth="136.0" unFocusColor="BLACK" />
+      <JFXTextField fx:id="txtDiscount" focusColor="WHITE" layoutX="1089.0" layoutY="218.0" prefHeight="31.0" prefWidth="136.0" promptText="0" unFocusColor="BLACK" />
+      <JFXComboBox fx:id="lblType" layoutX="821.0" layoutY="260.0" prefHeight="31.0" prefWidth="153.0" />
+      <JFXComboBox fx:id="lblSize" layoutX="1052.0" layoutY="260.0" prefHeight="31.0" prefWidth="153.0" />
+      <JFXButton fx:id="btnUpdate" layoutX="1046.0" layoutY="332.0" onAction="#btnUpdateOnAction" prefHeight="31.0" prefWidth="106.0" style="-fx-background-color: gray;" text="Update " />
+      <JFXButton fx:id="btnClear" layoutX="931.0" layoutY="333.0" onAction="#btnClearOnAction" prefHeight="31.0" prefWidth="106.0" style="-fx-background-color: green;" text="Clear" />
+      <JFXButton fx:id="btnRemoveOrder" layoutX="798.0" layoutY="334.0" onAction="#btnRemoveOrderOnAction" prefHeight="31.0" prefWidth="124.0" style="-fx-background-color: red;" text="Revome Order" />
+      <JFXButton fx:id="btnPlaceOrder" layoutX="1162.0" layoutY="724.0" onAction="#btnPlaceOrderOnAction" prefHeight="31.0" prefWidth="124.0" style="-fx-background-color: red;" text="Place Order">
+         <font>
+            <Font name="Eras Bold ITC" size="15.0" />
+         </font>
+      </JFXButton>
+      <Label layoutX="746.0" layoutY="731.0" text="Cash :">
+         <font>
+            <Font name="Copperplate Gothic Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="942.0" layoutY="731.0" text="Balance :">
+         <font>
+            <Font name="Copperplate Gothic Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblTotalQtyPrice" layoutX="250.0" layoutY="731.0" text="0" />
+      <Label fx:id="lblTotalDiscount" layoutX="470.0" layoutY="732.0" text="0" />
+      <Label fx:id="lblTotalPrice" layoutX="652.0" layoutY="731.0" text="0" />
+      <Label fx:id="lblBalance" layoutX="1029.0" layoutY="730.0" text="0" />
+      <JFXTextField fx:id="txtCash" focusColor="WHITE" layoutX="801.0" layoutY="718.0" prefHeight="31.0" prefWidth="107.0" unFocusColor="BLACK" />
+      <JFXTextField fx:id="lblDate" focusColor="WHITE" layoutX="231.0" layoutY="301.0" unFocusColor="BLACK" />
+      <Label fx:id="lblQtyOnHand" layoutX="1122.0" layoutY="183.0" text="0" />
+      <Label fx:id="lblSellingPrice" layoutX="882.0" layoutY="227.0" text="0" />
+   </children>
+</AnchorPane>

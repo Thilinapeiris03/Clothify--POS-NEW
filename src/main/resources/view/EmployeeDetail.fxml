@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTreeTableView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TreeTableColumn?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="791.0" maxWidth="1400.0" minHeight="750.0" minWidth="1400.0" prefHeight="791.0" prefWidth="1400.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.controller.EmployeeDetailController">
+   <children>
+      <ImageView fitHeight="890.0" fitWidth="1284.0" layoutX="-89.0" layoutY="-54.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/hannah-morgan-ycVFts5Ma4s-unsplash.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="811.0" fitWidth="1215.0" layoutX="436.0" layoutY="-6.0" pickOnBounds="true" preserveRatio="true" AnchorPane.topAnchor="-6.0">
+         <image>
+            <Image url="@../images/hannah-morgan-ycVFts5Ma4s-unsplash.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane cache="true" layoutX="80.0" layoutY="46.0" opacity="0.48" prefHeight="705.0" prefWidth="1322.0" style="-fx-background-radius: 50px; -fx-background-color: white;" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="80.0" AnchorPane.rightAnchor="80.0" AnchorPane.topAnchor="20.0">
+         <opaqueInsets>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </opaqueInsets>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </AnchorPane>
+      <Label layoutX="640.0" layoutY="40.0" text="Employee Details">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <JFXTreeTableView layoutX="125.0" layoutY="127.0" prefHeight="579.0" prefWidth="1159.0" style="-fx-background-radius: 5px;">
+         <columns>
+            <TreeTableColumn prefWidth="121.99993896484375" text="Employee ID" />
+            <TreeTableColumn prefWidth="255.0" text="Name" />
+            <TreeTableColumn prefWidth="170.0" text="NIC" />
+            <TreeTableColumn prefWidth="126.0" text="Email" />
+            <TreeTableColumn prefWidth="151.0" text="Address" />
+            <TreeTableColumn prefWidth="163.0" text="Contact" />
+            <TreeTableColumn prefWidth="171.0" text="Progress" />
+         </columns>
+      </JFXTreeTableView>
+      <JFXButton fx:id="btnBack" layoutX="120.0" layoutY="40.0" onAction="#btnBackOnAction" prefHeight="31.0" prefWidth="89.0" style="-fx-background-color: rgba(110, 85, 115, 0.75);" text="←Back" />
+      <JFXButton layoutX="839.0" layoutY="725.0" prefHeight="34.0" prefWidth="177.0" style="-fx-background-color: gray;" text="Request Update " />
+      <JFXButton fx:id="btnPrintEmployee" layoutX="1049.0" layoutY="724.0" onAction="#btnPrintEmployeeOnAction" prefHeight="34.0" prefWidth="237.0" style="-fx-background-color: pink;" text="Print Employee Deatails">
+         <font>
+            <Font name="Eras Bold ITC" size="17.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

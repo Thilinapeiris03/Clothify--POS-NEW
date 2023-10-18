@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTreeTableView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TreeTableColumn?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="791.0" maxWidth="1400.0" minHeight="750.0" minWidth="1400.0" prefHeight="791.0" prefWidth="1400.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.controller.OrderDetailController">
+   <children>
+      <ImageView fitHeight="890.0" fitWidth="1284.0" layoutX="-89.0" layoutY="-54.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/hannah-morgan-ycVFts5Ma4s-unsplash.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="811.0" fitWidth="1215.0" layoutX="436.0" layoutY="-6.0" pickOnBounds="true" preserveRatio="true" AnchorPane.topAnchor="-6.0">
+         <image>
+            <Image url="@../images/hannah-morgan-ycVFts5Ma4s-unsplash.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane cache="true" layoutX="80.0" layoutY="46.0" opacity="0.48" prefHeight="705.0" prefWidth="1322.0" style="-fx-background-radius: 50px; -fx-background-color: white;" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="80.0" AnchorPane.rightAnchor="80.0" AnchorPane.topAnchor="20.0">
+         <opaqueInsets>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </opaqueInsets>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </AnchorPane>
+      <Label layoutX="640.0" layoutY="40.0" text="Order Details">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <JFXTreeTableView layoutX="125.0" layoutY="102.0" prefHeight="283.0" prefWidth="1159.0" style="-fx-background-radius: 5px;">
+         <columns>
+            <TreeTableColumn prefWidth="121.99993896484375" text="Order Code" />
+            <TreeTableColumn prefWidth="186.0" text="Customer Name" />
+            <TreeTableColumn prefWidth="109.0" text="Emp ID" />
+            <TreeTableColumn prefWidth="121.0" text="Email" />
+            <TreeTableColumn prefWidth="105.0" text="Date" />
+            <TreeTableColumn prefWidth="143.0" text="Payment Type" />
+            <TreeTableColumn prefWidth="141.0" text="Total Price" />
+            <TreeTableColumn prefWidth="112.0" text="Discount" />
+            <TreeTableColumn prefWidth="119.0" text="Arries" />
+         </columns>
+      </JFXTreeTableView>
+      <JFXButton fx:id="btnBack" layoutX="120.0" layoutY="40.0" onAction="#btnBackOnAction" prefHeight="31.0" prefWidth="89.0" style="-fx-background-color: rgba(110, 85, 115, 0.75);" text="←Back" />
+      <JFXTreeTableView layoutX="121.0" layoutY="444.0" prefHeight="271.0" prefWidth="1159.0" style="-fx-background-radius: 5px;">
+         <columns>
+            <TreeTableColumn prefWidth="121.99993896484375" text="Item Code" />
+            <TreeTableColumn prefWidth="262.0" text="Description" />
+            <TreeTableColumn prefWidth="93.0" text="Type" />
+            <TreeTableColumn prefWidth="82.0" text="Size" />
+            <TreeTableColumn prefWidth="89.0" text="Qty" />
+            <TreeTableColumn prefWidth="126.0" text="Unit Price" />
+            <TreeTableColumn prefWidth="123.0" text="Qty Price" />
+            <TreeTableColumn prefWidth="126.0" text="Discount %" />
+            <TreeTableColumn prefWidth="134.0" text="Price" />
+         </columns>
+      </JFXTreeTableView>
+      <JFXButton fx:id="btnArriesUpdate" layoutX="1099.0" layoutY="395.0" onAction="#btnArriesUpdateOnAction" prefHeight="34.0" prefWidth="177.0" style="-fx-background-color: gray;" text="Arries Update " />
+   </children>
+</AnchorPane>
